@@ -3,6 +3,8 @@ public class EmpleadoPorHoras extends Empleado {
 <<<<<<< Updated upstream
 
     public EmpleadoPorHoras(String nombre, int horasTrabajadas, double tarifaHora, Departamento departamento, String genero) {
+    public EmpleadoPorHoras(String nombre, int horasTrabajadas, double tarifaHora, Departamento departamento,
+            String genero) {
         super(nombre, 0, horasTrabajadas, departamento, genero);
         super.setSalarioBase(calcularSalario());
         this.tarifaHora = tarifaHora;
@@ -32,6 +34,7 @@ public class EmpleadoPorHoras extends Empleado {
 }
 =======
         return super.getHorasTrabajadas()*tarifaHora;
+        return super.getHorasTrabajadas() * super.getTarifaHora();
     }
 
     @Override
@@ -39,6 +42,7 @@ public class EmpleadoPorHoras extends Empleado {
         super.imprimirDetalles();
         System.out.println("Tarifa por Hora: " + tarifaHora);
         
+
     }
 }
 >>>>>>> Stashed changes

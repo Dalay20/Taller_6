@@ -14,6 +14,7 @@ public class Empleado {
         this.horasTrabajadas = horasTrabajadas;
         this.departamento = departamento;
         this.genero= genero;
+        this.genero=genero;
     }
 
    
@@ -26,6 +27,7 @@ public class Empleado {
             throw new IllegalArgumentException("El salario debe ser mayor o igual a 0");
         }
         salarioTotal = departamento.getSalary(salarioTotal);
+        
         return salarioTotal;
     }
                              
