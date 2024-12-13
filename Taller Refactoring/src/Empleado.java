@@ -30,11 +30,11 @@ public class Empleado {
     }
                              
     private double calculateFromHours() {
-        final int HORAS_NORMALES = 40;
-        if (horasTrabajadas > HORAS_NORMALES) {
-            return (horasTrabajadas - HORAS_NORMALES) * 50; // Pago por horas extra
-        }
-        return 0;
+        double result = salarioBase;
+        if(horasTrabajadas>40){
+            result += (horasTrabajadas - 40) *50.0;
+        } 
+        return result;
     }
 
     private boolean isValidSalary() {              
