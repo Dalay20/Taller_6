@@ -1,4 +1,3 @@
-public class Main {
 public class Main {  
     public static void main(String[] args) {
         Empresa empresa = new Empresa();
@@ -7,9 +6,6 @@ public class Main {
          Departamento departamentoCont = new DepartamentoCont();
          DepartamentoMedico departamentoMedico  = new DepartamentoMedico();
 
-        EmpleadoPorHoras emp1 = new EmpleadoPorHoras("Dario Laborde", 45, 15, "Sistemas", "Masculino");
-        EmpleadoFijo emp2 = new EmpleadoFijo("Jorge Gaibor",700,45,"Contabilidad",40, "Masculino");
-        EmpleadoTemporario emp3 = new EmpleadoTemporario("Jordan Salinas",200,20,"Medico",6, "Masculino");
         EmpleadoPorHoras emp1 = new EmpleadoPorHoras("Dario Laborde", 45, 15, departamentoSistemas, "Masculino");
         EmpleadoFijo emp2 = new EmpleadoFijo("Jorge Gaibor",700,45,departamentoCont,40, "Masculino");
         EmpleadoTemporario emp3 = new EmpleadoTemporario("Jordan Salinas",200,20,departamentoMedico,6, "Masculino");

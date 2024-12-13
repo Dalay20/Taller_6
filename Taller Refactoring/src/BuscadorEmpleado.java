@@ -20,6 +20,5 @@ public class BuscadorEmpleado {
         }
         return empleadosPorTipo;
     }
-    // Más metodos
   
 }
