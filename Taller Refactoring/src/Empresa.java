@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Empresa {
     private List<Empleado> empleados;
@@ -17,13 +18,9 @@ public class Empresa {
     }
 
     public List<Empleado> obtenerEmpleadosPorHorasTrabajadasaPartirDe(int horas) {
-        List<Empleado> empleadosPorTipo = new ArrayList<>();
-        for (Empleado empleado : empleados) {
-            if (empleado.getHorasTrabajadas()>horas) {
-                empleadosPorTipo.add(empleado);
-            }
-        }
-        return empleadosPorTipo;
+        return empleados.stream()
+                .filter(empleado -> empleado.getHorasTrabajadas() > horas)
+                .collect(Collectors.toList());
     }
 
     // Más metodos
