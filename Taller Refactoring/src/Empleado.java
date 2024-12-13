@@ -23,7 +23,6 @@ public class Empleado {
         if (isValidSalary()){
            salarioTotal=calculateFromHours();
         } else {
-            throw new IllegalArgumentException("Salary must be greater than or equal to 0");
             throw new IllegalArgumentException("El salario debe ser mayor o igual a 0");
         }
         salarioTotal = departamento.getSalary(salarioTotal);
