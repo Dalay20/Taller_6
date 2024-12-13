@@ -90,7 +90,6 @@ public class Empleado {
     // Más metodos
     public void imprimirDetalles() {
         System.out.println("Nombre: " + nombre);
-        System.out.println("Salario Base: " + salarioBase);
         System.out.println("Salario: " + salarioBase);
         System.out.println("Horas Trabajadas: " + horasTrabajadas);
         System.out.println("Departamento: " + departamento.getClass().getSimpleName());
