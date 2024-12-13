@@ -17,7 +17,7 @@ public class Empleado {
     }
 
    
-    public double calcularSalario() { // replace nested conditions with guard clauses
+    public double calcularSalario() {
         double salarioTotal=0;
 
         if (isValidSalary()){
@@ -39,13 +39,7 @@ public class Empleado {
     }
 
     private boolean isValidSalary() {              
-        if (salarioBase < 0) {
-            return false;
-        }
-        if (horasTrabajadas < 0) {
-            return false;
-        }
-        return true;
+        return salarioBase>0;
     }
 
     public String getNombre() {
